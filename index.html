@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta
+      name="description"
+      content="To-do App Using HTML,CSS and JavaScript"
+    />
+    <meta name="author" content="Avinash Prajapati" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./src/style.css" rel="stylesheet" />
+    <link rel="manifest" href="manifest.json" />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/icon-512.png"
+      type="image/x-icon"
+    />
+    <title>To-do App</title>
+  </head>
+  <body>
+    <div class="navbar_head">
+      <span>To Do App</span>
+    </div>
+
+    <div class="container">
+      <form>
+        <label for="todo_input" id="todo_label" class="form_label"
+          >Add Todo</label
+        >
+        <input
+          type="text"
+          class="form_input"
+          name="todo"
+          id="todo_input"
+          placeholder="Add Your Todo Here"
+        />
+        <p class="error_hide" id="error_msg">Please Enter Todo</p>
+        <button
+          type="button"
+          id="submit_btn"
+          onclick="addTodo()"
+          class="add_button"
+        >
+          Add
+        </button>
+      </form>
+    </div>
+    <div id="empty_notes" class="no_empty_notes">
+      No notes found! Please add one.
+    </div>
+
+    <ul id="todo_list"></ul>
+
+    <script src="./src/script.js"></script>
+  </body>
+</html>
